@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.31101.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlindEye", "BlindEye\BlindEye.csproj", "{DDE1BE34-5BF5-4211-95F2-35823EE0024C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlindEye_Lib", "BlindEye_Lib\BlindEye_Lib.csproj", "{24901E06-E9F9-44FF-A82B-7F574B772DEA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DDE1BE34-5BF5-4211-95F2-35823EE0024C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DDE1BE34-5BF5-4211-95F2-35823EE0024C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DDE1BE34-5BF5-4211-95F2-35823EE0024C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DDE1BE34-5BF5-4211-95F2-35823EE0024C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{24901E06-E9F9-44FF-A82B-7F574B772DEA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{24901E06-E9F9-44FF-A82B-7F574B772DEA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{24901E06-E9F9-44FF-A82B-7F574B772DEA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{24901E06-E9F9-44FF-A82B-7F574B772DEA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

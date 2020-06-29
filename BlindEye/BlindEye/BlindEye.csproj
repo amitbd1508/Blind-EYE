@@ -1,0 +1,388 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{DDE1BE34-5BF5-4211-95F2-35823EE0024C}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>BlindEye</RootNamespace>
+    <AssemblyName>BlindEye</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="itextsharp">
+      <HintPath>C:\Users\Administrator\Downloads\Compressed\New folder\itextsharp.dll</HintPath>
+    </Reference>
+    <Reference Include="itextsharp.pdfa">
+      <HintPath>C:\Users\Administrator\Downloads\Compressed\New folder\itextsharp.pdfa.dll</HintPath>
+    </Reference>
+    <Reference Include="itextsharp.xtra">
+      <HintPath>C:\Users\Administrator\Downloads\Compressed\New folder\itextsharp.xtra.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.QualityTools.Testing.Fakes, Version=12.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Speech" />
+    <Reference Include="System.Windows" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Control\BookReading\frmBookReader.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Control\BookReading\frmBookReader.Designer.cs">
+      <DependentUpon>frmBookReader.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Control\Books\frmPDFManeger.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Control\Books\frmPDFManeger.Designer.cs">
+      <DependentUpon>frmPDFManeger.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Control\frmStatistics.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Control\frmStatistics.Designer.cs">
+      <DependentUpon>frmStatistics.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Control\Books\frmBooks.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Control\Books\frmBooks.Designer.cs">
+      <DependentUpon>frmBooks.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Control\Books\frmChapter.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Control\Books\frmChapter.Designer.cs">
+      <DependentUpon>frmChapter.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Control\Books\frmContentManage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Control\Books\frmContentManage.Designer.cs">
+      <DependentUpon>frmContentManage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Control\frmAddNewBook.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Control\frmAddNewBook.Designer.cs">
+      <DependentUpon>frmAddNewBook.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Control\frmEditorControl.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Control\frmEditorControl.Designer.cs">
+      <DependentUpon>frmEditorControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Control\frmInstant Reading.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Control\frmInstant Reading.Designer.cs">
+      <DependentUpon>frmInstant Reading.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Control\frmPreviewText.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Control\frmPreviewText.Designer.cs">
+      <DependentUpon>frmPreviewText.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Control\frmUserControl.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Control\frmUserControl.Designer.cs">
+      <DependentUpon>frmUserControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Control\frmVoiceRecognigetion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Control\frmVoiceRecognigetion.Designer.cs">
+      <DependentUpon>frmVoiceRecognigetion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Control\testfrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Control\testfrm.Designer.cs">
+      <DependentUpon>testfrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Control\User Control\frgLogIn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Control\User Control\frgLogIn.Designer.cs">
+      <DependentUpon>frgLogIn.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Control\User Control\frmCreateUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Control\User Control\frmCreateUser.Designer.cs">
+      <DependentUpon>frmCreateUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Control\User Control\frmForgetPassword.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Control\User Control\frmForgetPassword.Designer.cs">
+      <DependentUpon>frmForgetPassword.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Control\User Control\frmResetPassword.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Control\User Control\frmResetPassword.Designer.cs">
+      <DependentUpon>frmResetPassword.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Control\User Control\frmSearchUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Control\User Control\frmSearchUser.Designer.cs">
+      <DependentUpon>frmSearchUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Control\Utility\frmAbout.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Control\Utility\frmAbout.Designer.cs">
+      <DependentUpon>frmAbout.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Control\Utility\frmUserRating.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Control\Utility\frmUserRating.Designer.cs">
+      <DependentUpon>frmUserRating.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MDIParent.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MDIParent.Designer.cs">
+      <DependentUpon>MDIParent.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Control\BookReading\frmBookReader.resx">
+      <DependentUpon>frmBookReader.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Control\Books\frmPDFManeger.resx">
+      <DependentUpon>frmPDFManeger.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Control\frmStatistics.resx">
+      <DependentUpon>frmStatistics.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Control\Books\frmBooks.resx">
+      <DependentUpon>frmBooks.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Control\Books\frmChapter.resx">
+      <DependentUpon>frmChapter.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Control\Books\frmContentManage.resx">
+      <DependentUpon>frmContentManage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Control\frmAddNewBook.resx">
+      <DependentUpon>frmAddNewBook.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Control\frmEditorControl.resx">
+      <DependentUpon>frmEditorControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Control\frmInstant Reading.resx">
+      <DependentUpon>frmInstant Reading.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Control\frmPreviewText.resx">
+      <DependentUpon>frmPreviewText.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Control\frmUserControl.resx">
+      <DependentUpon>frmUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Control\frmVoiceRecognigetion.resx">
+      <DependentUpon>frmVoiceRecognigetion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Control\testfrm.resx">
+      <DependentUpon>testfrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Control\User Control\frgLogIn.resx">
+      <DependentUpon>frgLogIn.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Control\User Control\frmCreateUser.resx">
+      <DependentUpon>frmCreateUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Control\User Control\frmForgetPassword.resx">
+      <DependentUpon>frmForgetPassword.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Control\User Control\frmResetPassword.resx">
+      <DependentUpon>frmResetPassword.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Control\User Control\frmSearchUser.resx">
+      <DependentUpon>frmSearchUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Control\Utility\frmAbout.resx">
+      <DependentUpon>frmAbout.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Control\Utility\frmUserRating.resx">
+      <DependentUpon>frmUserRating.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MDIParent.resx">
+      <DependentUpon>MDIParent.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\addnewuser.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\addnewuser1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\994085_3675633185168_614520769_n.jpg" />
+    <Content Include="Resources\abstract-background-blue-web-search-images-192116.jpg" />
+    <Content Include="Resources\add_user.ico" />
+    <Content Include="Resources\agt_login.png" />
+    <Content Include="Resources\Background_v3.gif" />
+    <Content Include="Resources\clipping_picture.ico" />
+    <Content Include="Resources\design-bump.png" />
+    <Content Include="Resources\document-decrypt-4.png" />
+    <Content Include="Resources\document-decrypt.png" />
+    <Content Include="Resources\document-encrypt.png" />
+    <Content Include="Resources\document-print-5.png" />
+    <Content Include="Resources\edit-clear-4.png" />
+    <Content Include="Resources\edit-clear-history-3.png" />
+    <Content Include="Resources\edit-cut-8.png" />
+    <Content Include="Resources\edit-find-project.png" />
+    <Content Include="Resources\edit.png" />
+    <Content Include="Resources\Everaldo-Crystal-Clear-App-antivirus.ico" />
+    <Content Include="Resources\filesaveas.ico" />
+    <Content Include="Resources\filesaveas_256.ico" />
+    <Content Include="Resources\floppy_drive.ico" />
+    <Content Include="Resources\frmLogIn.ico" />
+    <Content Include="Resources\gnome_edit_delete.png" />
+    <Content Include="Resources\gnome_keyring_manager%281%29.ico" />
+    <Content Include="Resources\Icon1.ico" />
+    <Content Include="Resources\Image1.bmp" />
+    <Content Include="Resources\images.jpg" />
+    <Content Include="Resources\images.png" />
+    <None Include="Resources\IMG_3552.JPG" />
+    <Content Include="Resources\login.png" />
+    <Content Include="Resources\login1.png" />
+    <Content Include="Resources\Login2.png" />
+    <Content Include="Resources\login3.png" />
+    <Content Include="Resources\Login4.png" />
+    <Content Include="Resources\LoginBack2.jpg" />
+    <Content Include="Resources\Main.ico" />
+    <Content Include="Resources\my_pictures4.ico" />
+    <Content Include="Resources\report_check.png" />
+    <Content Include="Resources\Save.png" />
+    <Content Include="Resources\search_user.ico" />
+    <Content Include="Resources\Stop.png" />
+    <Content Include="Resources\user-new-2.png" />
+    <Content Include="Resources\user.png" />
+    <Content Include="Resources\user_blue.png" />
+    <Content Include="Resources\user_edit.ico" />
+    <Content Include="Resources\user_male.png" />
+    <Content Include="Resources\view-refresh-6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BlindEye_Lib\BlindEye_Lib.csproj">
+      <Project>{24901e06-e9f9-44ff-a82b-7f574b772dea}</Project>
+      <Name>BlindEye_Lib</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="AcrobatAccessLib">
+      <Guid>{C523F390-9C83-11D3-9094-00104BD0D535}</Guid>
+      <VersionMajor>3</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="AcroBrokerLib">
+      <Guid>{41738EEA-442F-477F-92CF-2889BD6CD7E7}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="AcroPDFLib">
+      <Guid>{05BFD3F1-6319-4F30-B752-C7A22889BCC4}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="AxAcroPDFLib">
+      <Guid>{05BFD3F1-6319-4F30-B752-C7A22889BCC4}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>aximp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+    <COMReference Include="FileViewLib">
+      <Guid>{BE79C475-D632-4A57-91B3-DA044FA27CDA}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
